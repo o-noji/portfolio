@@ -1,8 +1,11 @@
-import sgMail from '@sendgrid/mail';
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-
-export default async function handler(req) {
+export default function handler(req: {
+  method: string;
+  body: { name: any; email: any; message: string };
+}) {
   if (req.method === 'POST') {
+    const sgMail = require('@sendgrid/mail');
+    sgMail.setApiKey(process.env.SENDGRID_API);
+
     const msg = {
       to: req.body.email,
       from: process.env.MAIL_FROM,
@@ -32,9 +35,11 @@ export default async function handler(req) {
     `,
     };
 
-    try {
-      await sgMail.send(msg);
-      await sgMail.send(notification);
-    } catch (error) {}
+    (async () => {
+      try {
+        await sgMail.send(msg);
+        await sgMail.send(notification);
+      } catch (error: any) {}
+    })();
   }
 }
