@@ -4,7 +4,7 @@ import Header from "@/compornents/Header";
 import Footer from "@/compornents/Footer";
 
 
-export function Sidebar(): JSX.Element {
+export default function Sidebar(): JSX.Element {
   return (
     <div className={styles.sidebar}>
       <div className={styles.sidebar__inner}>

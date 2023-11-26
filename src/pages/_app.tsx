@@ -1,7 +1,7 @@
 import "@/styles/reset.css";
 import "@/styles/globals.scss";
 import type { AppProps } from "next/app";
-import { Sidebar } from "@/compornents/Sidebar";
+import Sidebar from "@/compornents/Sidebar";
 
 function App({ Component, pageProps }: AppProps) {
   return (
