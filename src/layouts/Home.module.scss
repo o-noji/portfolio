@@ -1,0 +1,18 @@
+.h1 {
+  font-size: 4.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mv {
+  margin-top: 96px;
+}
+
+.h2 {
+  font-size: 3.6rem;
+  font-weight: bold;
+  margin-top: 96px;
+  + p {
+    margin-top: 64px;
+  }
+}

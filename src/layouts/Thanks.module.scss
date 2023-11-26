@@ -1,0 +1,11 @@
+.h1 {
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+
+.p {
+  margin-top: 80px;
+  + p {
+    margin-top: 32px;
+  }
+}

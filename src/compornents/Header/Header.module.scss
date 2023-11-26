@@ -1,0 +1,14 @@
+.nav {
+  margin-top: 136px;
+  ul {
+    li {
+      font-size: 1.6rem;
+      &:nth-of-type(n + 2) {
+        margin-top: 40px;
+      }
+      img {
+        width: 20px;
+      }
+    }
+  }
+}
