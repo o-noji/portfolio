@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "@/compornents/Sidebar/Sidebar.module.scss";
-import { Footer } from "@/compornents/Footer";
-import { Header } from "@/compornents/Header";
+import Header from "@/compornents/Header";
+import Footer from "@/compornents/Footer";
+
 
 export function Sidebar(): JSX.Element {
   return (

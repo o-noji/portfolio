@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "@/compornents/Footer/Footer.module.scss";
 
-export function Footer(): JSX.Element {
+export default function Footer(): JSX.Element {
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__inner}>

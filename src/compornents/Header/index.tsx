@@ -5,7 +5,7 @@ import styles from "./Header.module.scss";
 import Logo from "public/img/logo.png";
 import Github from "public/img/github.svg";
 
-export function Header(): JSX.Element {
+export default function Header(): JSX.Element {
   return (
     <header className={styles.header}>
       <div className={styles.header__inner}>
