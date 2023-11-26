@@ -1,11 +1,11 @@
-export default function handler(req: {
-  method: string;
-  body: { name: any; email: any; message: string };
-}) {
-  if (req.method === 'POST') {
-    const sgMail = require('@sendgrid/mail');
-    sgMail.setApiKey(process.env.SENDGRID_API);
+import sgMail from '@sendgrid/mail';
+sgMail.setApiKey(process.env.SENDGRID_API);
 
+export default async function handler(req, res) {
+  let response1 = null;
+  let response2 = null;
+
+  if (req.method === 'POST') {
     const msg = {
       to: req.body.email,
       from: process.env.MAIL_FROM,
@@ -35,11 +35,15 @@ export default function handler(req: {
     `,
     };
 
-    (async () => {
-      try {
-        await sgMail.send(msg);
-        await sgMail.send(notification);
-      } catch (error: any) {}
-    })();
+    try {
+      response1 = await sgMail.send(msg);
+      response2 = await sgMail.send(notification);
+      res.status(200).json({ message: 'メールが送信されました。' });
+    } catch (error) {
+      // eslint-disable-next-line no-console
+      console.error('メールの送信中にエラーが発生しました:', error);
+    }
   }
+  res.send(response1);
+  res.send(response2);
 }
