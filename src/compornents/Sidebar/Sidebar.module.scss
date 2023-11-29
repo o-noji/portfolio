@@ -6,7 +6,12 @@
   top: 0;
   padding: 0 40px;
   border-right: 1px solid #333;
+  @media screen and (max-width: 768px) {
+    border: none;
+  }
   &__inner {
     margin-top: 60px;
+    @media screen and (max-width: 768px) {
+    }
   }
 }

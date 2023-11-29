@@ -1,12 +1,19 @@
 .h1 {
-  font-size: 3.6rem;
+  // font-size: 3.6rem;
+  font-size: 36px;
   font-weight: bold;
 }
 
 .column3 {
   margin-top: 80px;
+  @media screen and (max-width: 768px) {
+    margin-top: 56px;
+  }
   &__inner {
     display: flex;
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
     > div {
       width: calc(352 / 1120 * 100%);
       margin-right: calc(32 / 1120 * 100%);
@@ -16,19 +23,39 @@
       &:nth-of-type(3n) {
         margin-right: 0;
       }
+      @media screen and (max-width: 768px) {
+        width: 48%;
+        margin-right: 0;
+        &:nth-of-type(2n) {
+          margin-left: 4%;
+        }
+        &:nth-of-type(n + 3) {
+          margin-top: 24px;
+        }
+      }
     }
   }
 }
 
 .h2 {
-  font-size: 2.4rem;
+  // font-size: 2.4rem;
+  font-size: 24px;
   font-weight: bold;
   text-align: center;
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+  }
 }
 
 .link {
   margin-top: 32px;
   display: block;
+  @media screen and (max-width: 768px) {
+    margin-top: 24px;
+  }
+  img {
+    border: 1px solid #333;
+  }
 }
 
 .description {
@@ -38,10 +65,13 @@
 .tag {
   margin-top: 16px;
   display: flex;
+  flex-wrap: wrap;
   > li {
     padding: 4px 8px;
     margin-right: 4px;
     border-radius: 10px;
+    font-size: 10px;
+    margin-bottom: 5px;
     &:last-of-type {
       margin-right: 0;
     }

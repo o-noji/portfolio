@@ -1,18 +1,38 @@
 .h1 {
-  font-size: 4.8rem;
+  // font-size: 4.8rem;
+  font-size: 48px;
   font-weight: bold;
   text-align: center;
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+  }
 }
 
 .mv {
-  margin-top: 96px;
+  margin-top: 72px;
+  @media screen and (max-width: 768px) {
+    margin-top: 56px;
+  }
+  &__inner {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
 }
 
 .h2 {
-  font-size: 3.6rem;
+  // font-size: 3.6rem;
+  font-size: 36px;
   font-weight: bold;
-  margin-top: 96px;
+  margin-top: 72px;
+  @media screen and (max-width: 768px) {
+    margin-top: 56px;
+    font-size: 32px;
+  }
   + p {
     margin-top: 64px;
+    @media screen and (max-width: 768px) {
+      margin-top: 48px;
+    }
   }
 }

@@ -12,18 +12,18 @@ interface PortfolioData {
 export const PortfolioData = [
   {
     title: 'ポートフォリオ',
-    images: '',
+    images: 'img01.jpg',
     link: 'https://portfolio-o-noji.vercel.app/portfolios',
-    description: 'ポートフォリオ用に作成しました。',
+    description:
+      'ポートフォリオ用に作成したページをまとめるために作成しました。',
     tag: ['React.js', 'Next.js', 'TypeScript'],
     github: 'https://github.com/o-noji/portfolio',
   },
   {
     title: 'ポートフォリオ用サイト（スポーツジム）',
-    images: '',
+    images: 'img02.jpg',
     link: 'https://portfolio-gym.vercel.app',
-    description:
-      'ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト',
+    description: 'スポーツジムをイメージして作成しました。',
     tag: ['React.js', 'Next.js', 'TypeScript'],
     github: 'https://github.com/o-noji/portfolio_Gym',
   },
