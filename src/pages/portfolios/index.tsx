@@ -17,6 +17,7 @@ export default function Portfolios(): JSX.Element {
       initial={{ opacity: 0 }} // 初期状態
       animate={{ opacity: 1 }} // マウント時
       exit={{ opacity: 0 }} // アンマウント時
+      style={{ opacity: 0 }}
     >
       <h1 className={styles.h1}>Portfolios</h1>
       <div className={styles.column3}>
