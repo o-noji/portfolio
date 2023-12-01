@@ -19,6 +19,7 @@ export default function Thanks(): JSX.Element {
       initial={{ opacity: 0 }} // 初期状態
       animate={{ opacity: 1 }} // マウント時
       // exit={{ opacity: 0 }} // アンマウント時
+      transition={{ duration: 1, delay: 0.5 }}
     >
       <h1 className={styles.h1}>お問い合わせありがとうございました。</h1>
       <p className={styles.p}>
