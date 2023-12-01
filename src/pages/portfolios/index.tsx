@@ -13,12 +13,7 @@ export default function Portfolios(): JSX.Element {
   };
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }} // 初期状態
-      animate={{ opacity: 1 }} // マウント時
-      // exit={{ opacity: 0 }} // アンマウント時
-      transition={{ duration: 1, delay: 0.5 }}
-    >
+    <>
       <h1 className={styles.h1}>Portfolios</h1>
       <div className={styles.column3}>
         <div className={styles.column3__inner}>
@@ -54,6 +49,6 @@ export default function Portfolios(): JSX.Element {
           })}
         </div>
       </div>
-    </motion.div>
+    </>
   );
 }
