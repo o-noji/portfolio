@@ -11,6 +11,7 @@ export default function Home() {
       animate={{ opacity: 1 }} // マウント時
       exit={{ opacity: 0 }} // アンマウント時
       layout
+      transition={{ duration: 0.5 }}
     >
       <h1 className={styles.h1}>Portfolio</h1>
       <div className={styles.mv}>
