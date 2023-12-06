@@ -13,7 +13,7 @@ export const PortfolioData = [
   {
     title: 'ポートフォリオ',
     images: 'img01.jpg',
-    link: 'https://portfolio-o-noji.vercel.app/portfolios',
+    link: 'https://portfolio-o-noji.vercel.app',
     description:
       'ポートフォリオ用に作成したページをまとめるために作成しました。',
     tag: ['React.js', 'Next.js', 'TypeScript'],
