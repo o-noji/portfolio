@@ -13,6 +13,7 @@ export default function Portfolios(): JSX.Element {
     Mantine: styles.tag04,
     JavaScript: styles.tag05,
     jQuery: styles.tag06,
+    'Three.js': styles.tag07,
   };
 
   return (
