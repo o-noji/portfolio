@@ -28,6 +28,7 @@ function App({ Component, pageProps, router }: AppProps) {
       <Head>
         <title>Onoji Portfolio</title>
         <meta name="description" content="岡田拓也のポートフォリオです！" />
+        <meta name="robots" content="noindex" />
       </Head>
       <Sidebar />
       <main className="main">
