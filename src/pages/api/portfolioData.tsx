@@ -16,15 +16,30 @@ export const PortfolioData = [
     link: 'https://portfolio-o-noji.vercel.app',
     description:
       'ポートフォリオ用に作成したページをまとめるために作成しました。',
-    tag: ['React.js', 'Next.js', 'TypeScript'],
+    tag: ['React.js', 'Next.js', 'TypeScript', 'Mantine'],
     github: 'https://github.com/o-noji/portfolio',
   },
   {
     title: 'ポートフォリオ用サイト（スポーツジム）',
     images: 'img02.jpg',
     link: 'https://portfolio-gym.vercel.app',
-    description: 'スポーツジムをイメージして作成しました。',
-    tag: ['React.js', 'Next.js', 'TypeScript'],
+    description:
+      '勉強中のReactを使用してスポーツジムをイメージたページを作成しました。',
+    tag: ['React.js', 'Next.js', 'TypeScript', 'Mantine'],
     github: 'https://github.com/o-noji/portfolio_Gym',
+  },
+  {
+    title: 'ALMA TERRA',
+    images: 'img03.jpg',
+    link: 'http://agave-jp.com/',
+    description: '株式会社アルマテラのホームページの構築をしました。',
+    tag: ['JavaScript', 'jQuery'],
+  },
+  {
+    title: 'WORKO',
+    images: 'img04.jpg',
+    link: 'https://www.asahi.com/ads/worko/',
+    description: '朝日新聞デジタル WORKOのページの構築をしました。',
+    tag: ['JavaScript', 'jQuery'],
   },
 ];

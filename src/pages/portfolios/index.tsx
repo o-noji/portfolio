@@ -10,6 +10,9 @@ export default function Portfolios(): JSX.Element {
     'React.js': styles.tag01,
     'Next.js': styles.tag02,
     TypeScript: styles.tag03,
+    Mantine: styles.tag04,
+    JavaScript: styles.tag05,
+    jQuery: styles.tag06,
   };
 
   return (
@@ -37,13 +40,15 @@ export default function Portfolios(): JSX.Element {
                     </li>
                   ))}
                 </ul>
-                <a
-                  className={styles.github}
-                  href={items.github}
-                  target={'_blank'}
-                >
-                  <Image src={Github} alt="Github" />
-                </a>
+                {items.github && (
+                  <a
+                    className={styles.github}
+                    href={items.github}
+                    target={'_blank'}
+                  >
+                    <Image src={Github} alt="Github" />
+                  </a>
+                )}
               </div>
             );
           })}
