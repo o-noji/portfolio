@@ -3,12 +3,12 @@ import '@/styles/reset.css';
 import '@/styles/globals.scss';
 import '@mantine/core/styles.css';
 import type { AppProps } from 'next/app';
-import usePageTracking from '@/hooks/usePageTracking';
 import { MantineProvider } from '@mantine/core';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useTransitionFix } from '@/utils/useTransitionFix';
 import Head from 'next/head';
 import Sidebar from '@/compornents/Sidebar';
+import ScriptGa from '@/hooks/ScriptGa';
 
 const PAGE_VARIANTS = {
   initial: {
@@ -23,11 +23,11 @@ const PAGE_VARIANTS = {
 };
 
 function App({ Component, pageProps, router }: AppProps) {
-  usePageTracking();
   const transitionCallback = useTransitionFix();
   return (
     <MantineProvider>
       <Head>
+        <ScriptGa />
         <title>Onoji Portfolio</title>
         <meta name="description" content="岡田拓也のポートフォリオです！" />
         <meta name="robots" content="noindex" />
