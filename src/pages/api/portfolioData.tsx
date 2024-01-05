@@ -42,13 +42,13 @@ export const PortfolioData = [
     description: '朝日新聞デジタル WORKOのページの構築をしました。',
     tag: ['JavaScript', 'jQuery'],
   },
-  {
-    title: 'practice Three.js',
-    images: 'img05.jpg',
-    link: 'https://pictures-threejs.vercel.app/',
-    description:
-      'Three.jsを使用してスクロールに応じて背景が動くページを作成しました。',
-    tag: ['React.js', 'Three.js'],
-    github: 'https://github.com/o-noji/pictures_threejs',
-  },
+  // {
+  //   title: 'practice Three.js',
+  //   images: 'img05.jpg',
+  //   link: 'https://pictures-threejs.vercel.app/',
+  //   description:
+  //     'Three.jsを使用してスクロールに応じて背景が動くページを作成しました。',
+  //   tag: ['React.js', 'Three.js'],
+  //   github: 'https://github.com/o-noji/pictures_threejs',
+  // },
 ];
